@@ -3,94 +3,84 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Biblioteca Virtual - Jardim de Infancia Cantinho Magico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual - Jardim de Infância Cantinho Mágico</title>
+
     <style>
-        html,
-        body {
+        /* ===== BASE ===== */
+        html, body {
             height: 100%;
             margin: 0;
         }
-
         body {
             display: flex;
             flex-direction: column;
             font-family: Arial, sans-serif;
         }
 
+        /* header fixo */
         header {
-            background-color: #0f03adea;
-            color: white;
-            padding: 10px;
-            text-align: center;
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             z-index: 1000;
+            background-color: #0f03adea;
+            color: #fff;
         }
-
         .header-content {
             display: flex;
             align-items: center;
             gap: 10px;
+            padding: 10px;
             justify-content: flex-start;
-            padding: 10px
         }
-
-        header span {
-            color: yellow;
-        }
-
         .logo {
             width: 56px;
             height: 56px;
         }
-
         .header-title {
             font-size: 24px;
             font-weight: bold;
         }
+        header span { color: yellow; }
 
+        /* corpo principal */
         main {
-            background-color: white;
-            padding: 20px 0;
             flex: 1;
             max-width: 1320px;
-            /* 4x 300px + espaçamento */
-            margin: 0 auto;
-            margin-top: 76px; 
+            margin: 80px auto 0;      /* 80 px = altura do header */
+            padding: 20px 0;
+            background: #fff;
         }
+        section { margin-bottom: 30px; }
 
-        section {
-            margin-bottom: 30px;
-            margin-top: 10px; 
-        }
-
+        /* grid de itens */
         .conteudos {
             display: flex;
-            justify-content: space-between;
             flex-wrap: wrap;
             gap: 10px;
-            /* reduzido para menor espaçamento entre quadrados */
+            justify-content: space-between;
         }
-
         .item {
-            width: 300px;
+            width: 300px;             /* 4 colunas no desktop */
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
+        /* quadrado responsivo */
         .quadrado {
-            width: 300px;
-            height: 300px;
-            background-color: #ccc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 18px;
-            color: #333;
+            width: 100%;
+            padding-top: 100%;        /* altura = largura */
+            position: relative;
+            background: #ccc;
+        }
+        .quadrado img.squareImage {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
         }
 
         .titulo-conteudo {
@@ -100,11 +90,27 @@
             color: #0f03adea;
         }
 
+        /* rodapé */
         footer {
             background-color: #0f03adea;
-            color: white;
+            color: #fff;
             padding: 15px;
             text-align: center;
+        }
+
+        /* ===== MOBILE ===== */
+        @media (max-width: 600px) {
+            .header-content { padding: 8px; }
+            .header-title  { font-size: 18px; }
+
+            /* duas colunas */
+            .item { width: calc(50% - 10px); }
+
+            .titulo-conteudo { font-size: 11px; }
+        }
+        @media (max-width: 380px) {
+            /* uma coluna */
+            .item { width: 100%; }
         }
     </style>
 </head>
