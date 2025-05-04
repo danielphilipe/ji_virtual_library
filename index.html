@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca Virtual - Jardim de Infancia Cantinho Magico</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #0f03adea;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: flex-start;
+            padding: 10px
+        }
+
+        header span {
+            color: yellow;
+        }
+
+        .logo {
+            width: 56px;
+            height: 56px;
+        }
+
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px 0;
+            flex: 1;
+            max-width: 1320px;
+            /* 4x 300px + espaçamento */
+            margin: 0 auto;
+            margin-top: 76px; 
+        }
+
+        section {
+            margin-bottom: 30px;
+            margin-top: 10px; 
+        }
+
+        .conteudos {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            /* reduzido para menor espaçamento entre quadrados */
+        }
+
+        .item {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .quadrado {
+            width: 300px;
+            height: 300px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .titulo-conteudo {
+            margin-top: 8px;
+            font-size: 12px;
+            text-align: center;
+            color: #0f03adea;
+        }
+
+        footer {
+            background-color: #0f03adea;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/magic-show.png" alt="Logo" class="logo">
+            <span class="header-title">Catinho Biblioteca Virtual
+            </span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Exemplo de uma das 13 sections -->
+        <section>
+            <div class="conteudos">
+                <div class="item">
+                    <div class="quadrado"><img src="images/primavera.png" alt="squareImage" class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1EdmQAa5d9XjB-pc-ukeE-imZ5B0ktubl/view"
+                            target="_blank">A PRIMAVERA E A FESTA DAS FLORES</a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/amigos.png" alt="squareImage" class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1b66Lwf6qmga44yjCuGbhyJ0zwCj4gS7s/view"
+                            target="_blank">AMIGOS DA NOITE</a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/brancaCega.png" alt="squareImage" class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1JECf6YGVeWt6nOKkkgvD6_-PdZfvzox3/view"
+                            target="_blank">BRANCA CEGA DE NEVE
+                        </a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/cocegas.png" alt="squareImage" class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1tBc-xN3zchVIHWcsxk-oVcmwr9BhAeuV/view"
+                            target="_blank">COCEGAS NA FLORESTA</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="conteudos">
+                <div class="item">
+                    <div class="quadrado"><img src="images/123_circo_300.png" alt="squareImage" class="squareImage">
+                    </div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1ZHM2JiwJknv8K5IlGgTwkOU-Cxz8mU3M/view"
+                            target="_blank">1*2*3* CIRCO</a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/agua_nossa_300.png" alt="squareImage" class="squareImage">
+                    </div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1XFPEeHrC2NQkZum7m7Kuc8HA6YbFyiD0/view"
+                            target="_blank">A ÁGUA NOSSA DE CADA DIA</a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/arvore_da_chuva_300.png" alt="squareImage"
+                            class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1m7rEoZlsMJz7KmA9x84xAs5T2pqCQjEu/view"
+                            target="_blank">A ÁRVORE DA CHUVA</a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/arvore_estacoes_300.png" alt="squareImage"
+                            class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1Im-_e4yP3-La2wMGIvgNQz14uPFRnlfl/view"
+                            target="_blank">A ÁRVORE</a></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="conteudos">
+                <div class="item">
+                    <div class="quadrado"><img src="images/arvore_dos_sapatos_300.png" alt="squareImage"
+                            class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1P-AUeQ6M89izS7_DxGJJc3Sai4tk43mj/view"
+                            target="_blank">A ÁRVORE DOS SAPATOS</a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/a_banana_300.png" alt="squareImage" class="squareImage">
+                    </div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1W4M1gPJfGJ6-Um676Qa2Pz72AmQiNcuj/view"
+                            target="_blank">A BANANA</a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/baratinha_adoeceu_300.png" alt="squareImage"
+                            class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1AWL3z603Tts6Dsh-fYCUDoKjH5KvIKH6/view"
+                            target="_blank">O QUE ACONTECEU? </a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/bela_adormecida_300.png" alt="squareImage"
+                            class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1n9WKRoT1WZZMZmKBfI_ET3jjc0GZVrfW/view"
+                            target="_blank">A BELA ADORMECIDA</a></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="conteudos">
+                <div class="item">
+                    <div class="quadrado"><img src="images/a_bela_desadormecida_300.png" alt="squareImage"
+                            class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1PGcSRoxoJkPdTmjePP-5aActxmKGXizd/view"
+                            target="_blank">A BELA DESADORMECIDA</a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/a_bela_e_a_fera_300.png" alt="squareImage"
+                            class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1_DHpnuXXjOsER-xSpTpK3tTzy0B2JCIH/view"
+                            target="_blank">A BELA E A FERA</a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/a_bisa_fala_cada_coisa_300.png" alt="squareImage"
+                            class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1_DB3NXR2Ef36pWpAN-P50oi687l7tWBt/view"
+                            target="_blank">A BISA FALA CADA COISA</a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/a_bota_do_bode_300.png" alt="squareImage"
+                            class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://www.youtube.com/watch?v=Z5Tt1C62QbM&ab_channel=BisnagasFlix" target="_blank">A
+                            BOTA DO BODE</a></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="conteudos">
+                <div class="item">
+                    <div class="quadrado"><img src="images/a_estrelinha_do_mar_300.png" alt="squareImage"
+                            class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1xPQlmNdQiAN5hQF-V52WwKxRSARXZkHm/view"
+                            target="_blank">A ESTRELINHA DO MAR</a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/a_gratidao_do_suricato_300.png" alt="squareImage"
+                            class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1uujvUYysFga6n5jbMDiDM9aYqIooaGNB/view"
+                            target="_blank">A GRATIDÃO DO SURICATO</a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/a_lenda_dos_animais_que_voavam_300.png" alt="squareImage"
+                            class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1mPA4GFK_WbqWZYPcKUh8qgLC1iBc13EL/view"
+                            target="_blank">A LENDA DOS ANIMAIS QUE VOAVAM </a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/a_velhinha_a_galinha_e_os_ovos_de_pascoa_300.png"
+                            alt="squareImage" class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1A6B_ZViqcZQCUHO4J_h3GZmtsrLVDpwY/view"
+                            target="_blank">A VELINHA, A GALINHA E OS OVOS DE PÁSCOA</a></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="conteudos">
+                <div class="item">
+                    <div class="quadrado"><img src="images/a_galinha_que_sabia_ler_300.png" alt="squareImage"
+                            class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1z-ZAmXnWmskv-J_iEZ_xHABUS-4ahg_r/view"
+                            target="_blank">A GALINHA QUE SABIA LER </a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/as_princesas_bailarinas_300.png" alt="squareImage"
+                            class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1hRc8iNMLCB0GINN-Ets8_f6Tr_JMIjkP/view"
+                            target="_blank">AS PRINCESAS BAILARINAS </a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/bernardo_o_desastrado_300.png" alt="squareImage"
+                            class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1u4TB9ydNkfULPkMylsiRoltkIqKK6uGY/view"
+                            target="_blank">BERNARDO, O DESASTRADO</a></div>
+                </div>
+                <div class="item">
+                    <div class="quadrado"><img src="images/caderno_de_caligrafia_magica_poesia_300.png"
+                            alt="squareImage" class="squareImage"></div>
+                    <div class="titulo-conteudo"><a
+                            href="https://drive.google.com/file/d/1cJOdVWOFuvC2G2KgP_pdu2tfoTHdWwSV/view"
+                            target="_blank">CADERNO DE CALIGRAFIA MÁGICA POESIA</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Drehers Solution LTDA</p>
+    </footer>
+</body>
+
+</html>
